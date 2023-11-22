@@ -9,7 +9,7 @@ class ToDoTasksScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Provider(
+    return ChangeNotifierProvider(
       create: (_) => ToDoTasksBloc(
         const ToDoTasksState.loading(),
       ),

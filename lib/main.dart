@@ -7,9 +7,6 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(
-    MultiProvider(
-      providers: [],
-      child: const MyApp(),
-    ),
+    const MyApp(),
   );
 }

@@ -9,7 +9,7 @@ class InProgressTasksScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Provider(
+    return ChangeNotifierProvider(
       create: (_) => InProgressTasksBloc(
         const InProgressTasksState.loading(),
       ),
