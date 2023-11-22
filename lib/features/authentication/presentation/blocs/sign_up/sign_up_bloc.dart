@@ -11,7 +11,7 @@ class SignUpBloc extends ValueNotifier<SignUpState> {
     );
   }
 
-  void onNamelChanged(String name) {
+  void onNameChanged(String name) {
     value = value.copyWith(
       name: name.trim(),
     );

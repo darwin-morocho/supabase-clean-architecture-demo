@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        enabled: true
+        generate_for:
+          include:
+            - "**/*_failure.dart"
+            - "**/*_state.dart"
+      source_gen|combining_builder:
+        options:
+          ignore_for_file:
+            - "type=lint"
+            - always_specify_types
+            - public_member_api_docs
