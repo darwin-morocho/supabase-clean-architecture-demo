@@ -3,14 +3,14 @@ import '../../../../core/failures/failure.dart';
 import '../../../../core/typedefs.dart';
 
 abstract interface class AuthenticationRepository {
-  FutureEither<Failure, User> signIn({
-    String email,
-    String password,
+  FutureEither<Failure, UserProfile> signIn({
+    required String email,
+    required String password,
   });
 
-  FutureEither<Failure, User> signUp({
-    String email,
-    String name,
-    String password,
+  FutureEither<Failure, UserProfile> signUp({
+    required String email,
+    required String name,
+    required String password,
   });
 }

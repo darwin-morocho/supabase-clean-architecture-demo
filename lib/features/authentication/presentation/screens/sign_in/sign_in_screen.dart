@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../core/presentation/router/routes.dart';
 import '../../../../../core/presentation/utils/validations_ext.dart';
 import '../../blocs/sign_in/sign_in_bloc.dart';
 import '../../blocs/sign_in/sign_in_state.dart';
@@ -63,7 +64,7 @@ class SignInScreen extends StatelessWidget with AuthFormMixin {
                     ),
                     const SizedBox(height: 20),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => SignUpRoute().push(context),
                       child: const Text('Create a new account'),
                     ),
                   ],

@@ -7,6 +7,11 @@ targets:
           include:
             - "**/*_failure.dart"
             - "**/*_state.dart"
+      go_router_builder|go_router_builder:
+        enabled: true
+        generate_for:
+          include:
+            - "lib/core/presentation/router/routes.dart"
       source_gen|combining_builder:
         options:
           ignore_for_file:

@@ -1,0 +1,5 @@
+{
+  "command-runner.commands": {
+    "buil_runner": "dart run build_runner build"
+  }
+}
